@@ -5,7 +5,19 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+function printNNum (target, n=1){
+    console.log(n);
+    if(n===target) {
+        return
+    }
+
+    printNNum(target, n+1);
+}
+
 rl.question("Enter number  ", function(num) {
+
+    num = Number(num)
+    printNNum(num);
 
   rl.close();
 });
