@@ -5,19 +5,14 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-function printNNum (target, n=1){
-    console.log(n);
-    if(n===target) {
-        return
-    }
-
-    printNNum(target, n+1);
-}
-
 rl.question("Enter number  ", function(num) {
 
-    num = Number(num)
-    printNNum(num);
-
+    for(let i = 0 ; i<num; i++) {
+        let str = "";
+        for(let j=0 ; j<=i ;j++){
+            str+="*"
+        }
+        console.log(str);
+    }
   rl.close();
 });

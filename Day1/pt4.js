@@ -5,13 +5,13 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.question("Enter number of rows: ", function (rows) {
-  for (let i = 1; i <= rows; i++) {
-    let row = "";
+rl.question("Enter number  ", function (num) {
+  for (let i = 1; i <= num; i++) {
+    let str = "";
     for (let j = 1; j <= i; j++) {
-      row += i;
+      str += i;
     }
-    console.log(row);
+    console.log(str);
   }
   rl.close();
 });
