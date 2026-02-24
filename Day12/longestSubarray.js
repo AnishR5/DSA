@@ -19,7 +19,7 @@ const longestSubArray1 = (nums, sum) =>{
     return;
 }
 
-longestSubArray1([10, 5, 2, 7, 1, 9],15)
+longestSubArray1([9, -3, 3, -1, 6, -5],0)
  
 longestSubArray1([-3,2,1],6)
  
